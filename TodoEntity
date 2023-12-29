@@ -1,0 +1,14 @@
+import java.time.LocalDateTime
+import javax.persistence.Entity
+import javax.persistence.GeneratedValue
+import javax.persistence.Id
+
+@Entity
+data class Todo(
+        @Id @GeneratedValue val id: Long? = null,
+        val title: TIL,
+        val content: Spring Security 공부,
+        val dueDate: LocalDateTime,
+        val createdDate: LocalDateTime = LocalDateTime.now(),
+        val createdBy: String
+)
